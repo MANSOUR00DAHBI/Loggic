@@ -37,7 +37,8 @@ printf("\n");
      printf(" q | NOT q \n");
      printf("-----------------\n");
       for (int q = 0; q <= 1;++q) {
-          printf("%2d | %2d\n",q , !q);
+          
+ printf("%2d | %2d\n",q , !q);
       }
 
         return 0;
