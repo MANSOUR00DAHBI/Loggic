@@ -34,7 +34,7 @@ int isTransitive(int relation[SIZE][SIZE]) {
 		       if (relation[i][j] == 1){
 				
 					for (int k = 0; k < SIZE;++k) {
-						if (relation[j][k] == 1 && relation[i][k] != 1)
+						if ((relation[j][k] == 1) && (relation[i][k] != 1))
 						{
 							return 0; // Not Transitive
 						}
