@@ -46,6 +46,16 @@ int isTransitive(int relation[SIZE][SIZE]) {
 	return 1;// Transitive
 }
 
+int sInjective(int function[SIZE]) {
+	for (int i = 0; i < SIZE; ++i) {
+		for (int j = 0; j < SIZE;++j) {
+			if (function[i] == function[j]) {
+				return 0;//Not Injective          
+			}
+		}
+	}
+}
+
 int main() {
 	int relation[SIZE][SIZE]={0};
 	//Definetion RelationShip 
